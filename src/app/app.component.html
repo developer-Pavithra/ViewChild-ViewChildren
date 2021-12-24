@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+
+<p #myPara>My paragaraph</p>
+<p #myPara>Start editing to see some magic happen :)</p>
+<input type="text" [(ngModel)]="age" #myAge />
+
+<app-child #child></app-child>
+
+{{ child.age }}
+{{ child.counter }}
+<button (click)="child.increment()">increment</button>
+
+<button (click)="child.decrement()">decrement</button>
